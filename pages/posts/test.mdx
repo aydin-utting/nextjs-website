@@ -1,0 +1,25 @@
+export const metadata = {
+    author: "Aydin Utting",
+    datePublished: "15 June 2021",
+    title: "Test Post"
+}
+
+import Link from 'next/link';
+
+# hello
+
+:wave: :car: :smile:
+
+This is definitely possible.
+All I need now is to create a folder with all the MDX files, and a way to turn them into seperate pages with a [slug].js blog posts file.
+Then I need some scripts to run through the metadata and get the dates and make the lists for the summary views.
+
+I think ideally there would be a componenent which is a blog post summary with the title in one div the "absract" in another and the published date.
+
+and then I could reuse this depending on what view i am in, big cards? small list on homepage?
+
+<h2>
+    <Link href="/">
+        <a>Back Home</a>
+    </Link>
+</h2>

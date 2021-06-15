@@ -1,0 +1,30 @@
+.navBar{
+	width: 100vw;
+	height: 3rem;
+	position: fixed;
+	top: 0;
+	background-color: #eee;
+	z-index: 2;
+}
+
+.navBar a{
+	color: black;
+}
+.navBarNav{
+	width: 100vw;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display:flex;
+}
+
+.navItem {
+	font-size: 20px;
+	padding-left: 16px;
+
+}
+.navItemMain {
+	font-size: 20px;
+	padding-left: 16px;
+	margin-left: auto;
+}
