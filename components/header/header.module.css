@@ -3,7 +3,7 @@
 	height: 3rem;
 	position: fixed;
 	top: 0;
-	background-color: #eee;
+	background-color: rgb(212, 255, 244);
 	z-index: 2;
 }
 
@@ -18,13 +18,39 @@
 	display:flex;
 }
 
+.navItemHome {
+	font-size: 20px;
+	padding: 5px;
+	width: 150px;
+	text-align: center;
+}
+.navItemHome:hover,
+.navItemHome:focus,
+.navItemHome:active {
+	background-color: rgb(120, 252, 219);
+}
+
+
 .navItem {
 	font-size: 20px;
-	padding-left: 16px;
+	padding: 5px;
 
+	text-align: center;
+}
+
+.navItem:hover,
+.navItem:focus,
+.navItem:active {
+	background-color: rgb(120, 252, 219);
 }
 .navItemMain {
 	font-size: 20px;
 	padding-left: 16px;
 	margin-left: auto;
+}
+
+.navItemMain:hover,
+.navItemMain:focus,
+.navItemMain:active {
+	background-color: rgb(120, 252, 219);
 }

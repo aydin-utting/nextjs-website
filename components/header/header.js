@@ -2,18 +2,19 @@ import styles from "./header.module.css"
 import Link from 'next/link'
 import NavLink from 'next/link'
 
+
 export default function Header() {
 	return(
     <div className={styles.navBar}>
     	<ul className={styles.navBarNav}>
-    	<li className={styles.navItem}>
+    	<li className={styles.navItemHome}>
 	    	<NavLink href="/">
-		    	<a>Home</a>
+		    	<a>Aydin Utting</a>
 	    	</NavLink>
 	    </li>
 	    <li className={styles.navItem}>
-	    	<NavLink href="/posts/first-post">
-		    	<a>First Post</a>
+	    	<NavLink href="/blog/ ">
+		    	<a>Blog</a>
 	    	</NavLink>
 	    </li>
 	    
@@ -22,13 +23,8 @@ export default function Header() {
 		    	<a>Changelog</a>
 	    	</NavLink>
 	    </li>
-	     <li className={styles.navItem}>
-	    	<NavLink href="/blogpost">
-		    	<a>MDXtest</a>
-	    	</NavLink>
-	    </li>
-		<li className={styles.navItemMain}>
-	    	<NavLink href="/">
+		<li className={styles.navItem}>
+	    	<NavLink href="/contact">
 		    	<a>Contact Me</a>
 	    	</NavLink>
 	    </li>

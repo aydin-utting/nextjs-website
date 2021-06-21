@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",
+    "fs": "0.0.1-security",
     "mdx-bundler": "^4.1.0",
     "next": "10.2.3",
+    "next-mdx-remote": "^3.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "remark-emoji": "^2.2.0",
-    "remark-images": "^2.0.0"
+    "remark-images": "^2.0.0",
+    "to-vfile": "^7.1.0"
   }
 }
