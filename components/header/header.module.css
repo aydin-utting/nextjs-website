@@ -1,10 +1,31 @@
+.titleBar{
+	width: 100vw;
+	height: 3rem;
+	position: relative;
+	top: 0;
+	background-color: white;
+	z-index: 2;
+	font-family: monospace;
+	display: flex;
+	justify-content: center;
+}
+.navItemHome {
+	font-size: 25px;
+	font-weight: bold;
+	padding: 5px;
+
+	text-align: center;
+}
+
 .navBar{
 	width: 100vw;
 	height: 3rem;
-	position: fixed;
+	position: -webkit-sticky;
+  	position: relative;
 	top: 0;
-	background-color: rgb(212, 255, 244);
+	background-color: white;
 	z-index: 2;
+	font-family: monospace;
 }
 
 .navBar a{
@@ -16,32 +37,28 @@
 	padding: 0;
 	margin: 0;
 	display:flex;
+	justify-content: center;
 }
 
-.navItemHome {
-	font-size: 20px;
-	padding: 5px;
-	width: 150px;
-	text-align: center;
-}
+
 .navItemHome:hover,
 .navItemHome:focus,
 .navItemHome:active {
-	background-color: rgb(120, 252, 219);
+	background-color: whitesmoke;
 }
 
 
 .navItem {
+
 	font-size: 20px;
 	padding: 5px;
-
 	text-align: center;
 }
 
 .navItem:hover,
 .navItem:focus,
 .navItem:active {
-	background-color: rgb(120, 252, 219);
+	background-color: whitesmoke;
 }
 .navItemMain {
 	font-size: 20px;
@@ -52,5 +69,5 @@
 .navItemMain:hover,
 .navItemMain:focus,
 .navItemMain:active {
-	background-color: rgb(120, 252, 219);
+	background-color: whitesmoke;
 }

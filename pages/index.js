@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Layout from '../components/layout'
 import Header from '../components/header/header'
 import React, { useState } from 'react';
 import Footer from '../components/footer/footer'
