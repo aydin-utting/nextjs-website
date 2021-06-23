@@ -14,6 +14,7 @@ export default function BlogHomepage() {
             <h1>
                 Blog
             </h1>
+            <p>HELLO</p>
             <Link href='blog/nextpost'>
                 <a>Next Post</a>
             </Link>

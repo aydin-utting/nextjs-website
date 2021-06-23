@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
+import Link from "next/link";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -10,8 +10,20 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet"/>
+        <link href="/fonts/Bariol/Bariol-Regular-Webfont/stylesheet.css" rel="stylesheet"/>
+        <link href="/fonts/Bariol/Bariol-Regular-Italic-Webfont/stylesheet.css" rel="stylesheet"/>
+        <link
+            rel="preload"
+            href="/fonts/Bariol/Bariol-Regular-Webfont/bariol_regular-webfont.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="fonts/Bariol/Bariol-Regular-Italic-Webfont/bariol_regular_italic-webfont.ttf"
+            as="font"
+            crossOrigin=""
+          />
         </Head>
         <body>
           <Main />
