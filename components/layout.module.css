@@ -1,5 +1,18 @@
-.container {
-  max-width: 64ch;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+.container { 
+  display: grid;
+  grid-template-columns: 1fr min(65ch, calc(100% - 64px)) 1fr;
+ }
+.container > * {
+  grid-column: 2;
 }
+
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+.container h1 {
+   font-size: var(--header-font-size);
+   width: 100%;
+   grid-column: 1 / -1;
+  text-align: center;
+ }

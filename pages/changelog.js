@@ -15,8 +15,9 @@ const remarkEmoji = require('remark-emoji')
 
 import {Box, Card} from 'rebass'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const components = { Box, Card, Image }
+const components = { Box, Card, Image, Link }
 
 
 export default function FirstPost({source,frontMatter}) {

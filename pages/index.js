@@ -21,8 +21,7 @@ export default function Home() {
   return (
       <>
       <Head>
-        <title>My First Website</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Aydın</title>
       </Head>
       <Header/>
       <main className={styles.main}>

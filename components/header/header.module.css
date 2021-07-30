@@ -1,31 +1,23 @@
+
+
 .titleBar{
 	width: 100vw;
-	height: 3rem;
 	position: relative;
 	top: 0;
 	background-color: white;
 	z-index: 2;
-	font-family: monospace;
 	display: flex;
 	justify-content: center;
 }
-.navItemHome {
-	font-size: 25px;
-	font-weight: bold;
-	padding: 5px;
 
-	text-align: center;
-}
 
 .navBar{
 	width: 100vw;
 	height: 3rem;
-	position: -webkit-sticky;
   	position: relative;
 	top: 0;
 	background-color: white;
 	z-index: 2;
-	font-family: monospace;
 }
 
 .navBar a{
@@ -34,22 +26,45 @@
 .navBarNav{
 	width: 100vw;
 	list-style: none;
-	padding: 0;
+	padding: 15px;
 	margin: 0;
 	display:flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
+.navItemHome {
+	font-size: 25px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	margin-right: auto;
+	border-radius: 5px;
+}
 
+@media screen and (max-width:450px) {
+	.navBarNav{
+		justify-content: left;
+	}
+	.navItemHome{
+		width: 100vw;
+		text-align: left;
+	}
+}
 
 .navItemHome:hover,
 .navItemHome:focus,
 .navItemHome:active {
 	background-color: whitesmoke;
+	color: linear-gradient(90deg, rgba(193,15,214,1) 0%, rgba(255,0,179,1) 46%, rgba(255,0,46,1) 100%); 
+	background: -webkit-linear-gradient(90deg, rgba(193,15,214,1) 0%, rgba(255,0,179,1) 46%, rgba(255,0,46,1) 100%); 
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 
 .navItem {
-
+	border-radius: 5px;
 	font-size: 20px;
 	padding: 5px;
 	text-align: center;
@@ -58,7 +73,11 @@
 .navItem:hover,
 .navItem:focus,
 .navItem:active {
-	background-color: whitesmoke;
+	color: linear-gradient(90deg, rgba(193,15,214,1) 0%, rgba(255,0,179,1) 46%, rgba(255,0,46,1) 100%); 
+	background: -webkit-linear-gradient(90deg, rgba(193,15,214,1) 0%, rgba(255,0,179,1) 46%, rgba(255,0,46,1) 100%); 
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .navItemMain {
 	font-size: 20px;

@@ -12,5 +12,7 @@
          url('bariol_regular-webfont.svg#bariolregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-variant-ligatures: common-ligatures;     
+    font-variant-ligatures: discretionary-ligatures;  
 
 }
